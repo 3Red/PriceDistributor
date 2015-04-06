@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Stock Grid</title>
+            <link rel="shortcut icon" href="/GET/Icon.jpg">
+        <style>
+            
+            td{
+                text-align:center
+            }
+
+            th {
+                background:#333333;
+                width:20%
+                
+            }
+
+            .rowHeader {
+                 background:#333333
+            }
+
+            .expired {
+                background:Red
+            }
+            
+        </style>
+        <script type="text/javascript" src="/GET/jssub.txt?type=text/javascript" ></script>
+        <script type="text/javascript" src="/GET/jsstring.txt?type=text/javascript" ></script>
+        <script type="text/javascript" src="/GET/jshash.txt?type=text/javascript"></script>
+        <script type="text/javascript" src="/GET/main.txt?type=text/javascript"></script>
+        </head>
+        <body style="background:black; color:whitesmoke; height: 100% ">
+            <img alt="3Red" src="/GET/logo.jpg" style="float:right; height: 60px; width:72px" />
+            <input id="subRad" type="radio" name="type" checked="checked" />Sub<br/>
+            <input id="stringRad" type="radio" name="type"/>String <br/>
+            <input id="hashRad" type="radio" name="type"/>Hash<br/>
+            <span>Speed</span><br />
+            <input type="range" id="speedRange" min="0" max="4900" value="4000" />
+            <table id="stockTable" style="width: 100%; height: 90%;" >
+                <tr>
+                    <th>Symbol</th>
+                    <th>Bid-Qty</th>
+                    <th>Bid</th>
+                    <th>Offer</th>
+                    <th>Offer-Qty</th>
+                    
+                </tr>
+            </table>
+        </body>
+    </html>
